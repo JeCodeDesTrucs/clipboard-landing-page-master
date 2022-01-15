@@ -418,11 +418,23 @@ body footer {
   gap: 2rem;
 }
 
-body footer .footer__logo {
-  width: 3rem;
+body footer .left-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body footer .footer__navigation {
+body footer .left-col .footer__logo {
+  width: 3rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+body footer .left-col .footer__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +445,7 @@ body footer .footer__navigation {
   gap: 1rem;
 }
 
-body footer .footer__navigation .footer__navigation__links {
+body footer .left-col .footer__navigation .footer__navigation__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,18 +457,18 @@ body footer .footer__navigation .footer__navigation__links {
   gap: 1rem;
 }
 
-body footer .footer__navigation .footer__navigation__links .footer__navigation__link {
+body footer .left-col .footer__navigation .footer__navigation__links .footer__navigation__link {
   color: var(--dark-grayish-blue);
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
 }
 
-body footer .footer__navigation .footer__navigation__links .footer__navigation__link:hover {
+body footer .left-col .footer__navigation .footer__navigation__links .footer__navigation__link:hover {
   color: var(--strong-cyan);
 }
 
-body footer .footer__socials {
+body footer .right-col .footer__socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,9 +479,9 @@ body footer .footer__socials {
   gap: 2rem;
 }
 
-body footer .footer__socials .footer__socials__facebook,
-body footer .footer__socials .footer__socials__twitter,
-body footer .footer__socials .footer__socials__instagram {
+body footer .right-col .footer__socials .footer__socials__facebook,
+body footer .right-col .footer__socials .footer__socials__twitter,
+body footer .right-col .footer__socials .footer__socials__instagram {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,16 +495,16 @@ body footer .footer__socials .footer__socials__instagram {
   border: none;
 }
 
-body footer .footer__socials .footer__socials__facebook .fab,
-body footer .footer__socials .footer__socials__twitter .fab,
-body footer .footer__socials .footer__socials__instagram .fab {
+body footer .right-col .footer__socials .footer__socials__facebook .fab,
+body footer .right-col .footer__socials .footer__socials__twitter .fab,
+body footer .right-col .footer__socials .footer__socials__instagram .fab {
   font-size: 1.25rem;
   color: var(--dark-grayish-blue);
 }
 
-body footer .footer__socials .footer__socials__facebook .fab:hover,
-body footer .footer__socials .footer__socials__twitter .fab:hover,
-body footer .footer__socials .footer__socials__instagram .fab:hover {
+body footer .right-col .footer__socials .footer__socials__facebook .fab:hover,
+body footer .right-col .footer__socials .footer__socials__twitter .fab:hover,
+body footer .right-col .footer__socials .footer__socials__instagram .fab:hover {
   cursor: pointer;
   color: var(--strong-cyan);
 }
@@ -624,6 +636,95 @@ body footer .footer__socials .footer__socials__instagram .fab:hover {
   }
   body main .download .download__buttons .download__button {
     width: 15rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body .hero .hero__content .hero__content__logo {
+    padding: 8rem 0 2rem 0;
+  }
+  body .hero .hero__content .hero__content__title {
+    font-size: 2rem;
+  }
+  body main .keep-track .keep-track__features .keep-track__features__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 2rem;
+  }
+  body main .access-clipboard-anywhere .access-clipboard-anywhere__img {
+    width: 55%;
+  }
+  body main .supercharge-your-workflow .supercharge-your-workflow__text {
+    padding-bottom: 1rem;
+  }
+  body main .supercharge-your-workflow .supercharge-your-workflow__features {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 2rem;
+  }
+  body main .supercharge-your-workflow .supercharge-your-workflow__features .features__blacklists,
+  body main .supercharge-your-workflow .supercharge-your-workflow__features .features__preview,
+  body main .supercharge-your-workflow .supercharge-your-workflow__features .features__snippet {
+    max-width: 20rem;
+  }
+  body main .partners .partners__list {
+    gap: 5rem;
+  }
+  body main .partners .partners__list .partners__list__item img {
+    width: 100%;
+  }
+  body main .download .download__text {
+    padding-bottom: 1.5rem;
+  }
+  body footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 6rem;
+  }
+  body footer .left-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 6rem;
+  }
+  body footer .left-col .footer__logo {
+    height: 60px;
+    width: 60px;
+    padding: 0;
+  }
+  body footer .left-col .footer__navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 6rem;
+  }
+  body footer .left-col .footer__navigation .footer__navigation__links {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=styles.css.map */
