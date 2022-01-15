@@ -78,7 +78,7 @@ body{
                     background: var(--strong-cyan);
                     border-bottom: var(--dark-strong-cyan) solid .25rem;
                     box-shadow: 0 10px 10px var(--cta-shadow-ios);
-
+                    transition: background .3s;
                     &:hover{
                         cursor: pointer;
                         background: var(--cta-active-ios);
@@ -89,7 +89,7 @@ body{
                     background: var(--light-blue);
                     border-bottom: var(--dark-light-blue) solid .25rem;
                     box-shadow: 0 10px 10px var(--cta-shadow-mac);
-
+                    transition: background .3s;
                     &:hover{
                         cursor: pointer;
                         background: var(--cta-active-mac);
@@ -293,7 +293,7 @@ body{
                         background: var(--strong-cyan);
                         border-bottom: var(--dark-strong-cyan) solid .25rem;
                         box-shadow: 0 10px 10px var(--cta-shadow-ios);
-
+                        transition: background .3s;
                         &:hover{
                             cursor: pointer;
                             background: var(--cta-active-ios);
@@ -304,7 +304,7 @@ body{
                         background: var(--light-blue);
                         border-bottom: var(--dark-light-blue) solid .25rem;
                         box-shadow: 0 10px 10px var(--cta-shadow-mac);
-
+                        transition: background .3s;
                         &:hover{
                             cursor: pointer;
                             background: var(--cta-active-mac);

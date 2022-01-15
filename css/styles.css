@@ -89,6 +89,8 @@ body .hero .hero__content .hero__content__buttons .button-ios {
   border-bottom: var(--dark-strong-cyan) solid 0.25rem;
   -webkit-box-shadow: 0 10px 10px var(--cta-shadow-ios);
           box-shadow: 0 10px 10px var(--cta-shadow-ios);
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 
 body .hero .hero__content .hero__content__buttons .button-ios:hover {
@@ -101,6 +103,8 @@ body .hero .hero__content .hero__content__buttons .button-mac {
   border-bottom: var(--dark-light-blue) solid 0.25rem;
   -webkit-box-shadow: 0 10px 10px var(--cta-shadow-mac);
           box-shadow: 0 10px 10px var(--cta-shadow-mac);
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 
 body .hero .hero__content .hero__content__buttons .button-mac:hover {
@@ -380,6 +384,8 @@ body main .download .download__buttons .button-ios {
   border-bottom: var(--dark-strong-cyan) solid 0.25rem;
   -webkit-box-shadow: 0 10px 10px var(--cta-shadow-ios);
           box-shadow: 0 10px 10px var(--cta-shadow-ios);
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 
 body main .download .download__buttons .button-ios:hover {
@@ -392,6 +398,8 @@ body main .download .download__buttons .button-mac {
   border-bottom: var(--dark-light-blue) solid 0.25rem;
   -webkit-box-shadow: 0 10px 10px var(--cta-shadow-mac);
           box-shadow: 0 10px 10px var(--cta-shadow-mac);
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 
 body main .download .download__buttons .button-mac:hover {
