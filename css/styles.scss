@@ -40,6 +40,8 @@ body{
             align-items: center;
             text-align: center;
             gap: 1rem;
+            animation: moveDown 1s ease-in-out forwards;
+            opacity: 0;
 
             .hero__content__logo{
                 width: 6rem;
@@ -134,6 +136,8 @@ body{
                     display: flex;
                     flex-direction: column;
                     gap: 2rem;
+                    animation: leftSlide 2s ease-in-out forwards;
+                    opacity: 0;
 
                     h3{
                         color: var(--dark-grayish-blue);
@@ -395,7 +399,7 @@ body{
 
         .hero{
             background-image: url('../images/bg-header-desktop.png');
-            background-size: contain;
+            background-size: cover;
 
             .hero__content{
                 padding: 0 5rem;
@@ -600,5 +604,27 @@ body{
 
             
         }
+    }
+}
+
+@keyframes moveDown{
+    from{
+        transform: translateY(-100px);
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes leftSlide{
+    from{
+        transform: translateX(100px);
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
     }
 }
