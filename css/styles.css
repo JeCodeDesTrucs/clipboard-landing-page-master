@@ -157,6 +157,7 @@ body main .keep-track .keep-track__features {
 
 body main .keep-track .keep-track__features .keep-track__features__img {
   padding-bottom: 2rem;
+  height: 100%;
 }
 
 body main .keep-track .keep-track__features .keep-track__features__content {
@@ -244,6 +245,7 @@ body main .access-clipboard-anywhere .access-clipboard-anywhere__text {
 
 body main .access-clipboard-anywhere .access-clipboard-anywhere__img {
   padding: 2rem 0 4rem 0;
+  height: 100%;
 }
 
 body main .supercharge-your-workflow {
